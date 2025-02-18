@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "QuickSave",
+    "version": "1.0",
+    "description": "Save highlighted text and view it in a popup.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "commands": {
+      "save-highlight": {
+        "suggested_key": {
+          "default": "Alt+S"
+        },
+        "description": "Save the highlighted text"
+      }
+    }
+  }
